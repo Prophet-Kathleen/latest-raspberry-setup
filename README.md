@@ -37,13 +37,13 @@ Windows这台电脑和树莓派通过有线连接到一个路由器，在192.168
 
 ![](https://github.com/Prophet-Kathleen/latest-raspberry-setup/blob/main/Picture/1.png)
 
-![avator](Picture\2.png)
+![](https://github.com/Prophet-Kathleen/latest-raspberry-setup/blob/main/Picture/2.png)
 
 ### 3.刷入系统
 
 系统的刷入我这里选择的软件在前言中说过，这个软件记得一定要用右键-管理员权限打开，否则一定会安装失败。最左边选择我们的镜像：ubuntu-20.04.1-preinstalled-server-arm64+raspi.img.xz
 
-![](Picture\3.png)
+![](https://github.com/Prophet-Kathleen/latest-raspberry-setup/blob/main/Picture/3.png)
 
 点击flash开始烧录。这个软件有三个状态，解压-写入-验证，正常状况使用Windows电脑验证可能不会成功，所以只要写入没有问题，验证阶段可以点击skip跳过，整个时间大约在五分钟左右。
 
@@ -56,19 +56,19 @@ Windows这台电脑和树莓派通过有线连接到一个路由器，在192.168
 
 首先要知道树莓派的ip地址，开机之后等待一分三十秒之后可以通过各种方法查看树莓派的ip，可以通过内网扫描软件，也可以直接打开路由器的管理界面查看当前的所有设备，树莓派设备会显示ubuntu，我这里通过登陆小米路由器管家观察到树莓派IP地址为192.168.31.237（如果路由器有绑定功能建议绑定）。
 打开xshell软件-新建会话，名称为自己喜欢的名称，主机填上树莓派的IP地址，端口号为22，点击链接，如果ip地址正确应该会提醒你是否接收秘钥，这里点击接收并保存秘钥。
-![](Picture\4.png)
+![](https://github.com/Prophet-Kathleen/latest-raspberry-setup/blob/main/Picture/4.png)
 
 然后输入用户名为：ubuntu，点击记住用户名。
 然后输入默认的密码：ubuntu，这里不用点击记住密码。然后点击确定即可。
 登录成功后会提醒你修改密码，所以现在记住临时密码还没有用。
 
-![](Picture\图片5.png)
+![](https://github.com/Prophet-Kathleen/latest-raspberry-setup/blob/main/Picture/图片5.png)
 
 先输入一遍默认的密码：ubuntu，然后他会提醒你输入两次新密码，之后客户端会断开连接，此时只需要点击左上角文件-重新连接即可。重新连接的时候会让你输入刚才设置的新密码，输入完毕后点击记住当前密码即可登录树莓派。
 
-![](Picture\图片6.png)
+![](https://github.com/Prophet-Kathleen/latest-raspberry-setup/blob/main/Picture/图片6.png)
 
-![](Picture\图片7.png)
+![](https://github.com/Prophet-Kathleen/latest-raspberry-setup/blob/main/Picture/图片7.png)
 
 ### 2.软件镜像设置
 
@@ -110,7 +110,7 @@ Windows上登录阿里云镜像网站：
 
 `deb-src http://mirrors.aliyun.com/ubuntu-ports/ focal-backports main restricted universe multiverse`
 
-![](Picture\图片8.png)
+![](https://github.com/Prophet-Kathleen/latest-raspberry-setup/blob/main/Picture/图片8.png)
 
 这里说一下vim的粘贴方法，按shift+冒号进入底行模式，输入set paste然后回车，这时候按i会显示insert（paste）进入专门的粘贴模式，
 能够防止格式出错。如果不想用这种方法，并且右键粘贴没出错的话，那么就当我没说过。~~个人来说比较喜欢用vim，那些nano啥的感觉有点奇怪，vi感觉没有vim完美~~。
@@ -125,7 +125,7 @@ Windows上登录阿里云镜像网站：
 
 ###3.相关问题的出现和解决（可以提交issue）
 
-![](Picture\图片9.png)
+![](https://github.com/Prophet-Kathleen/latest-raspberry-setup/blob/main/Picture/图片9.png)
 
 这是由于正有其他进程在使用`sudo apt update`这串代码，接下来教你如何操作
 
