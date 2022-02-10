@@ -35,7 +35,7 @@ Windows这台电脑和树莓派通过有线连接到一个路由器，在192.168
 
 左上角点击保存更改-是，之后会提醒是否需要格式化，点击是即可，之后你的Windows会自动识别这个新创建的u盘，也就是我们的SD卡，成功的还原为空卡了
 
-![](Picture\1.png)
+![](https://github.com/Prophet-Kathleen/latest-raspberry-setup/blob/main/Picture/1.png)
 
 ![avator](Picture\2.png)
 
