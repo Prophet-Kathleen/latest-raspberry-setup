@@ -133,7 +133,9 @@ Windows上登录阿里云镜像网站：
 这是由于正有其他进程在使用`sudo apt update`这串代码，接下来教你如何操作
 
 ####方法一、关闭重启树莓派（简单易用）
+
 `sudo halt`关机，然后重新接通电源开机，SSH连接上后用`sudo apt update && sudo apt upgrade`进行更新。
+
 ####方法二、温柔一点的方法
 `ps -A | grep apt`找到相关的进程PID，然后使用`sudo kill -9 PID`（这里的pid对应前面找到的进程号）即可，如果无法解决建议重启。
 
@@ -151,7 +153,7 @@ Windows上登录阿里云镜像网站：
 
 一句话代码安装所有可能需要的软件：
 `sudo apt update && sudo apt upgrade && sudo apt install -y gcc g++ python3-pip 
-openjdk-11-jdk ffmpeg cmatrix sl hollywood samba samba-common tmux htop s-tui 
+openjdk-11-jdk ffmpeg cmatrix sl hollywood samba samba-common tmux vim htop s-tui 
 python3-dev jq proxychains zsh iperf3 unzip curl screenfetch git cmake clang && sudo 
 apt autoremove`
 
